@@ -1,0 +1,116 @@
+/* Bases */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+
+}
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer"; 
+}
+/* Bases */
+
+/* Header*/
+header {
+  grid-area: header;
+  background-color: rgb(36, 36, 146);
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+}
+/* Header*/
+
+/* contenido articulos */
+main {
+  grid-area: main;
+  padding: 20px;
+  background-color: #dddddd;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px;
+}
+main article  {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main article img {
+  width: 100%;
+  height: auto;
+}
+main article h3  {
+  font-size: 20px;
+  padding: 10px 10px 0;
+}
+main article .precio  {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+main article button  {
+  background-color: rgb(36, 36, 146);
+  width: 100%;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  border: 0 none;
+  cursor: pointer;
+  margin-top: auto; 
+}
+main article button:hover  {
+  background-color: rgb(26, 26, 99);
+}
+/* contenido articulos */
+
+/* menu lateral */
+aside {
+  grid-area: aside;
+  padding: 20px;
+  background-color: #dddddd;
+}
+aside nav{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+aside h2{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+aside nav a{
+  text-decoration: none;
+  color: #333333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+aside nav a:hover{
+  color: rgb(26, 26, 99);
+}
+aside nav a span{
+  color: #5f5f5f;
+  font-weight: normal;
+}
+/* menu lateral */
+
+/* Footer */
+footer {
+  grid-area: footer;
+  padding: 20px;
+  background-color: #333333;
+  text-align: center;
+  color: #ffffff;;
+  font-size: 14px;
+}
+/* Footer */
