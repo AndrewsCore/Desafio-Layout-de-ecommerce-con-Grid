@@ -1,3 +1,4 @@
-##Desafío Layout de ecommerce con Grid HTML y CSS
+# Desafío Layout de ecommerce con Grid HTML y CSS
 
-#https://andrewscore.github.io/Desafi-o-Layout-de-ecommerce-con-Grid/
+## Ver Proyecto: 
+https://andrewscore.github.io/Desafio-Layout-de-ecommerce-con-Grid/
